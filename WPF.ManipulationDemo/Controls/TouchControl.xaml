@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Rectangle Width="300"
+        <Rectangle Name="BasicRect" Width="300"
                        Height="300"
                        Fill="Red"
                        IsManipulationEnabled="True"/>
