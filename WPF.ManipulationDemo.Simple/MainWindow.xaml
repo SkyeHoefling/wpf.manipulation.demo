@@ -8,8 +8,6 @@
         Title="MainWindow"
         Width="525"
         Height="350"
-        DataContext="{Binding Main,
-                              Source={StaticResource Locator}}"
         mc:Ignorable="d">
     <Grid>
         <c:TouchControl />
