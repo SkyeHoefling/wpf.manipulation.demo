@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace WPF.ManipulationDemo.Controls
+namespace WPF.ManipulationDemo.Simple.Controls
 {
     // This class was implemented from https://blogs.msdn.microsoft.com/llobo/2009/12/21/wpf-manipulation-basics/
 

@@ -1,6 +1,6 @@
 using GalaSoft.MvvmLight;
 
-namespace WPF.ManipulationDemo.ViewModel
+namespace WPF.ManipulationDemo.Simple.ViewModel
 {
     /// <summary>
     /// This class contains properties that the main View can data bind to.

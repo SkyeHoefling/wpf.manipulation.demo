@@ -1,13 +1,16 @@
-﻿<Window x:Class="WPF.ManipulationDemo.MainWindow"
+﻿<Window x:Class="WPF.ManipulationDemo.Simple.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:c="clr-namespace:WPF.ManipulationDemo.Simple.Controls"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WPF.ManipulationDemo.Simple"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF.ManipulationDemo"
-        xmlns:c="clr-namespace:WPF.ManipulationDemo.Controls"
-        DataContext="{Binding Main, Source={StaticResource Locator}}"        
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow"
+        Width="525"
+        Height="350"
+        DataContext="{Binding Main,
+                              Source={StaticResource Locator}}"
+        mc:Ignorable="d">
     <Grid>
         <c:TouchControl />
     </Grid>
