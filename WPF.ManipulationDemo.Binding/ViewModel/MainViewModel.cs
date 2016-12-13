@@ -1,4 +1,7 @@
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+using System.Windows.Input;
+using System;
 
 namespace WPF.ManipulationDemo.Binding.ViewModel
 {
@@ -29,6 +32,30 @@ namespace WPF.ManipulationDemo.Binding.ViewModel
             ////{
             ////    // Code runs "for real"
             ////}
+        }
+
+        public ICommand ManipulationStarting
+            => new RelayCommand<ManipulationStartingEventArgs>(OnManipulationStarting);
+
+        public ICommand ManipulationDelta
+            => new RelayCommand<ManipulationDeltaEventArgs>(OnManipulationDelta);
+
+        public ICommand ManipulationCompleted
+            => new RelayCommand<ManipulationCompletedEventArgs>(OnManipulationCompleted);
+
+        private void OnManipulationStarting(ManipulationStartingEventArgs e)
+        {
+            throw new NotImplementedException();            
+        }
+
+        private void OnManipulationDelta(ManipulationDeltaEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void OnManipulationCompleted(ManipulationCompletedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
